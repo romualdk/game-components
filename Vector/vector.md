@@ -63,7 +63,7 @@ For example you can see point *(3, 5)* below.
 
 IMAGE OF A POINT
 
-And vector is nothing more as line from origin *(0, 0)* to the point.
+And vector is nothing more as line from origin *(0, 0)* to that point.
 
 IMAGE OF A VECTOR
 
@@ -102,10 +102,10 @@ Just like with simple numbers: *A + 0 = A*.
 ```javascript
 // add - a function which adds two vectors
 
-let A = [3, 5] // any vector
+let a = [3, 5] // any vector
 let zero = [0, 0] // the zero vector
 
-let B = add(A, zero) // B = A = [3, 5]
+let b = add(a, zero) // b = a = [3, 5]
 ```
 
 If you multiply vector *0* by any vector *A* then you get vector *0*.
@@ -115,10 +115,10 @@ Just like with simple numbers: *A * 0 = 0*.
 ```javascript
 // multiply - a function which multiplies two vectors
 
-let A = [3, 5] // any vector
+let a = [3, 5] // any vector
 let zero = [0, 0] // the zero vector
 
-let B = multiply(A, zero) // B = zero = [0, 0]
+let b = multiply(a, zero) // b = zero = [0, 0]
 ```
 
 ### Unit vector
@@ -139,10 +139,10 @@ Just like with simple numbers: *A * 1 = A*.
 ```javascript
 // multiply - a function which multiplies two vectors
 
-let A = [3, 5] // any vector
+let a = [3, 5] // any vector
 let unit = [1, 1] // the unit vector
 
-let B = multiply(A, unit) // B = A = [3, 5]
+let b = multiply(a, unit) // b = a = [3, 5]
 ```
 
 ## Common use cases?
