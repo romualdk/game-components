@@ -9,7 +9,13 @@ You'll find here not only code but also explanation and examples of where and ho
 # Table of contents
 1. [What is vector](#what-is-vector)
 2. [Use cases](#use-cases)
-3. [Vector functions](#vector-functions)
+3. [Vector properties](#vector-properties)
+  3.1. [Angle](#angle)
+  3.2. [Length](#length)
+  3.3. [Distance](#distance)
+  3.4. [Squared length](#squared-length)
+  3.5. [Squared distance](#squared-distance)
+4. [Vector functions](#vector-functions)
 99. [__drafts__](#drafts)
 
 ## What is vector
@@ -22,11 +28,11 @@ You'll find here not only code but also explanation and examples of where and ho
 
 ### Length
 
-#### Squared length
-
 ### Distance
 
-#### Squared dinstace
+### Squared length
+
+### Squared dinstace
 
 ## Vector functions
 
@@ -41,8 +47,6 @@ You'll find here not only code but also explanation and examples of where and ho
 ### Scale (multiply by scalar)
 
 ### Rotate
-
-
 
 ### Invert
 
