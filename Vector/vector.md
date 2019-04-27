@@ -3,7 +3,7 @@ Simple 2D Vector math
 for amateur programmers
 -----------------------
 
-# Praface
+# Introduction
 
 Every time You want to make even most simple game you have to use vector mathematics.
 
