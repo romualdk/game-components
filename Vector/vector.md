@@ -3,6 +3,8 @@ Simple 2D Vector math
 for amateur programmers
 -----------------------
 
+# Praface
+
 Every time You want to make even most simple game you have to use vector mathematics.
 
 I present to you the simplest possible approach to vectors with a list of every function you will ever need.
@@ -10,6 +12,8 @@ I present to you the simplest possible approach to vectors with a list of every 
 You'll find here not only code but also explanation and examples of where and how to use those functions.
 
 Code examples here are JavaScript but since this is the most simple approach, you can easily use it in every other programming language.
+
+---
 
 # Table of contents
 1. [What is vector?](#what-is-vector?)
@@ -45,19 +49,21 @@ Code examples here are JavaScript but since this is the most simple approach, yo
    - [Easing](#easing)
 99. [__drafts__](#drafts)
 
+---
+
 ## What is vector?
 
 In mathematics vector is an object with angle and length.
 
-But in practice it's just a point. And a point is just a pair of two numbers: x and y.
+But in practice it's just a point. And a point is just a pair of two numbers: *x* and *y*.
 
-In mathematics a point is written as (x, y).
+In mathematics a point is written as *(x, y)*.
 
-For example you can see point (3, 5) below.
+For example you can see point *(3, 5)* below.
 
 IMAGE OF A POINT
 
-And vector is nothing more as line from origin (0, 0) to the point.
+And vector is nothing more as line from origin *(0, 0)* to the point.
 
 IMAGE OF A VECTOR
 
@@ -65,7 +71,7 @@ IMAGE OF A VECTOR
 
 Many different programming libraries have classes and objects to store vectors and its functions.
 
-But since we said that vector is just a point, we can store information about point in an old good simple two elements array.
+But since we said that vector is just a point, we can store information about point in an old good simple array.
 
 In javascript code below gives you the simplest vector you can make.
 
@@ -75,9 +81,69 @@ In javascript code below gives you the simplest vector you can make.
 [3, 5] // creates a (3, 5) vector
 ```
 
-### Zero vevtor
+### Zero vector
+
+In mathematics the zero vector is written as *0* or as a point *(0, 0)*.
+
+For us it's just an array with two *zeros*.
+
+```javascript
+[0, 0] // the zero vector
+```
+
+The funny thing about it is that it has no length and no direction.
+
+It has interesting behavior when you add or multiply it.
+
+If you add vector *0* to any vector *A* then you get the vector *A*.
+
+Just like with simple numbers: *A + 0 = A*.
+
+```javascript
+// add - a function which adds two vectors
+
+let A = [3, 5] // any vector
+let zero = [0, 0] // the zero vector
+
+let B = add(A, zero) // B = A = [3, 5]
+```
+
+If you multiply vector *0* by any vector *A* then you get vector *0*.
+
+Just like with simple numbers: *A * 0 = 0*.
+
+```javascript
+// multiply - a function which multiplies two vectors
+
+let A = [3, 5] // any vector
+let zero = [0, 0] // the zero vector
+
+let B = multiply(A, zero) // B = zero = [0, 0]
+```
 
 ### Unit vector
+
+In mathematics the unit vector is written as *1* or as a point *(1, 1)*.
+
+For us it's just an array of two *ones*.
+
+```javascript
+[1, 1] // the unit vector
+```
+It has interesting behavior when you multiply it.
+
+If you multiply vector *1* by any vector *A* then you get vector *A*.
+
+Just like with simple numbers: *A * 1 = A*.
+
+```javascript
+// multiply - a function which multiplies two vectors
+
+let A = [3, 5] // any vector
+let unit = [1, 1] // the unit vector
+
+let B = multiply(A, unit) // B = A = [3, 5]
+```
 
 ## Common use cases?
 
