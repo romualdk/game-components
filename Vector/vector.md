@@ -10,12 +10,63 @@ You'll find here not only code but also explanation and examples of where and ho
 1. [What is vector](#what-is-vector)
 2. [Use cases](#use-cases)
 3. [Vector functions](#vector-functions)
+99. [__drafts__](#drafts)
 
 ## What is vector
 
 ## Use cases
 
+## Vector properties
+
+### Angle
+
+### Length
+
+#### Squared length
+
+### Distance
+
+#### Squared dinstace
+
 ## Vector functions
+
+### Add
+
+### Subtract
+
+### Multiply
+
+### Divide
+
+### Scale (multiply by scalar)
+
+### Rotate
+
+
+
+### Invert
+
+### Normalize
+
+### Project
+
+### Dot product
+
+### Cross product
+
+### Lowest value (min)
+
+### Highest value (max)
+
+### Absolute value (abs)
+
+### Clamp
+
+### Linear interpolation
+
+### Easing (non-linear interpolation)
+
+## __drafts__
 
 ### Points
 
@@ -45,34 +96,3 @@ become:
 
 * v = add(v, scale(a, t))
 * p = add(p, scale(v, t))
-
-## Functions
-
-### Create (new vector)
-// There's no need to use function.
-// Use [x, y] to create vector.
-/* export function create (x, y) {
-  return [x, y]
-} */
-
-
-### zero
-// There's no need to use function.
-// Use [0, 0] to create zero vecotr.
-/* export function zero () {
-  return [0, 0]
-} */
-
-## unit
-
-// There's no need to use function.
-// Use [1, 1] to create unit vetor.
-/* export function unit () {
-  return [1, 1]
-} */
-
-## clone
-
-## add
-
-## subtract
