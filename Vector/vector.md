@@ -123,6 +123,10 @@ let b = multiply(a, zero) // b = zero = [0, 0]
 
 ### Unit vector
 
+NOPE - THIS IS NOT UNIT VECTOR
+
+UNIT VECTOR = LENGTH = 1
+
 In mathematics the unit vector is written as *1* or as a point *(1, 1)*.
 
 For us it's just an array of two *ones*.
@@ -156,6 +160,58 @@ let b = multiply(a, unit) // b = a = [3, 5]
 ## Vector properties
 
 ### Angle
+
+The mathematic formula to calculate angle between two vectors is:
+1. Calculate dot product
+2. Calculate magnitudes of vectors
+3. Calculate angle between vectors
+
+But the most simple way to calculate angle of vector is to use `atan2` function.
+
+It returns angle in radians.
+
+```javascript
+let a = [3, 5]
+
+let angleRadians = angle(a) // ≈ 1.0303 rad
+let angleDegrees = angleRadians * 180 / Math.PI // ≈ 59.0362°
+```
+
+```javascript
+let a = [1, 1]
+
+let angleRadians = angle(a) // = π / 4
+let angleDegrees = angleRadians * 180 / Math.PI // = 45°
+```
+
+```javascript
+let a = [0, 1]
+
+let angleRadians = angle(a) // = 0
+let angleDegrees = angleRadians * 180 / Math.PI // = 0°
+```
+
+```javascript
+let a = [1, 0]
+
+let angleRadians = angle(a) // =  π / 2
+let angleDegrees = angleRadians * 180 / Math.PI // = 90°
+```
+
+```javascript
+let a = [0, -1]
+
+let angleRadians = angle(a) // =  π
+let angleDegrees = angleRadians * 180 / Math.PI // = 180°
+```
+
+```javascript
+let a = [-1, 0]
+
+let angleRadians = angle(a) // =  3 / 2 * π
+let angleDegrees = angleRadians * 180 / Math.PI // = 270°
+```
+
 
 ### Length
 
