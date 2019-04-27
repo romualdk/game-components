@@ -5,7 +5,7 @@ for amateur programmers
 
 # Introduction
 
-Every time You want to make even most simple game you have to use vector mathematics.
+Every time you want to make even most simple game you have to use vector mathematics.
 
 I present to you the simplest possible approach to vectors with a list of every function you will ever need.
 
