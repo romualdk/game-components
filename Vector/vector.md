@@ -1,5 +1,11 @@
 # Simple 2D Vector math
 
+Every time You want to make even a simple game You have to use vector mathematics.
+
+I present to You the simplest possible approach to vectors with a list of every function You will ever need.
+
+You'll find here not only code but also explanation and examples of where and how to use those functions.
+
 # Table of contents
 1. [What is vector](#what-is-vector)
 2. [Use cases](#use-cases)
