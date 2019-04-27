@@ -1,6 +1,15 @@
 # Simple 2D Vector math
 
+# Table of contents
+1. [What is vector](#what-is-vector)
+2. [Use cases](#use-cases)
+3. [Vector functions](#vector-functions)
+
+## What is vector
+
 ## Use cases
+
+## Vector functions
 
 ### Points
 
