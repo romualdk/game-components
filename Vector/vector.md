@@ -7,20 +7,54 @@ I present to You the simplest possible approach to vectors with a list of every 
 You'll find here not only code but also explanation and examples of where and how to use those functions.
 
 # Table of contents
-1. [What is vector](#what-is-vector)
-2. [Use cases](#use-cases)
+1. [What is vector?](#what-is-vector?)
+   - [Your first vector](#your-first-vector)
+   - [Zero vector](#zero-vector)
+   - [Unit vector](#unit-vector)
+2. [Common use cases](#common-use-cases)
+   - [Distance between points](#distance-between-points)
+   - [Angle between points](#angle-between-points)
+   - [Moving object position](#moving-object-position)
 3. [Vector properties](#vector-properties)
-- [Angle](#angle)
-- [Length](#length)
-- [Distance](#distance)
-- [Squared length](#squared-length)
-- [Squared distance](#squared-distance)
+   - [Angle](#angle)
+   - [Length](#length)
+   - [Distance](#distance)
+   - [Squared length](#squared-length)
+   - [Squared distance](#squared-distance)
 4. [Vector functions](#vector-functions)
+   - [Add](#add)
+   - [Subtract](#subtract)
+   - [Multiply](#multiply)
+   - [Divide](#divide)
+   - [Scale](#scale)
+   - [Invert](#invert)
+   - [Normalize](#normalize)
+   - [Rotate](#rotate)
+   - [Project](#project)
+   - [Dot product](#dot-product)
+   - [Cross product](#cross-product)
+   - [Lowest value](#lowest-value)
+   - [Highest value](#highest-value)
+   - [Clamp](#clamp)
+   - [Linear interpolation](#linear-interpolation)
+   - [Easing](#easing)
 99. [__drafts__](#drafts)
 
-## What is vector
+## What is vector?
 
-## Use cases
+### Your first vector
+
+### Zero vevtor
+
+### Unit vector
+
+## Common use cases?
+
+### Distance between points
+
+### Angle between points
+
+### Moving object position
 
 ## Vector properties
 
@@ -44,7 +78,7 @@ You'll find here not only code but also explanation and examples of where and ho
 
 ### Divide
 
-### Scale (multiply by scalar)
+### Scale
 
 ### Rotate
 
@@ -58,17 +92,17 @@ You'll find here not only code but also explanation and examples of where and ho
 
 ### Cross product
 
-### Lowest value (min)
+### Lowest value
 
-### Highest value (max)
+### Highest value
 
-### Absolute value (abs)
+### Absolute value
 
 ### Clamp
 
 ### Linear interpolation
 
-### Easing (non-linear interpolation)
+### Easing
 
 ## __drafts__
 
