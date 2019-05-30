@@ -13,9 +13,10 @@
     "url": "https://github.com/romualdk/simple-game-components/issues"
   },
   "scripts": {
-    "test": "standard"
+    "test": "mocha && standard"
   },
   "devDependencies": {
+    "mocha": "^6.1.4",
     "standard": "^12.0.1"
   }
 }
