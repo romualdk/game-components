@@ -24,5 +24,7 @@
     "url": "https://github.com/romualdk/simple-game-components/issues"
   },
   "homepage": "https://github.com/romualdk/simple-game-components#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
 }
