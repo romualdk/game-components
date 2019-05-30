@@ -1,7 +1,7 @@
 // https://github.com/noonat/intersect/blob/master/src/intersect.ts
 
 export function intersectAABB (box) {
-  var dx = box.pos.x - this.pos.x;
+  var dx = box.pos.x - this.pos.x
   var px = (box.half.x + this.half.x) - abs(dx)
   if (px <= 0) {
     return null
@@ -18,8 +18,7 @@ export function intersectAABB (box) {
     hit.normal.x = sx
     hit.pos.x = this.pos.x + (this.half.x * sx)
     hit.pos.y = box.pos.y
-  }
-  else {
+  } else {
     var sy = sign(dy)
     hit.delta.y = py * sy
     hit.normal.y = sy

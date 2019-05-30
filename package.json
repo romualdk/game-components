@@ -1,29 +1,20 @@
 {
   "name": "simple-game-components",
-  "version": "0.1.0",
   "description": "Building blocks of a simple game.",
-  "main": "index.js",
-  "directories": {
-    "doc": "doc",
-    "example": "example"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "license": "MIT",
+  "version": "0.1.0",
+  "author": "Romuald Kowalczyk",
+  "homepage": "https://github.com/romualdk/simple-game-components#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/romualdk/simple-game-components.git"
   },
-  "keywords": [
-    "game",
-    "simple"
-  ],
-  "author": "Romuald Kowalczyk",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/romualdk/simple-game-components/issues"
   },
-  "homepage": "https://github.com/romualdk/simple-game-components#readme",
+  "scripts": {
+    "test": "standard"
+  },
   "devDependencies": {
     "standard": "^12.0.1"
   }
