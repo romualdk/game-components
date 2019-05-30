@@ -166,56 +166,114 @@ The mathematic formula to calculate angle between two vectors is:
 2. Calculate magnitudes of vectors
 3. Calculate angle between vectors
 
-But the most simple way to calculate angle of vector is to use `atan2` function.
+But the most simple way to calculate angle is to use `atan2` function.
 
 It returns angle in radians.
 
-```javascript
-let a = [3, 5]
-
-let angleRadians = angle(a) // ≈ 1.0303 rad
-let angleDegrees = angleRadians * 180 / Math.PI // ≈ 59.0362°
-```
+Horizontal angle α.
 
 ```javascript
-let a = [1, 1]
-
-let angleRadians = angle(a) // = π / 4
-let angleDegrees = angleRadians * 180 / Math.PI // = 45°
+alpha = Math.atan2(y, x)
+// y is the first argument
 ```
+
+Vertical angle β.
 
 ```javascript
-let a = [0, 1]
-
-let angleRadians = angle(a) // = 0
-let angleDegrees = angleRadians * 180 / Math.PI // = 0°
+beta = Math.atan2(x, y)
 ```
+
+example
 
 ```javascript
-let a = [1, 0]
+let x = 3
+let y = 5
 
-let angleRadians = angle(a) // =  π / 2
-let angleDegrees = angleRadians * 180 / Math.PI // = 90°
+let alpha = Math.atan2(y, x) // ≈ 1.03 rad ≈ 59.04°
+let beta = Math.atan2(x, y) // ≈ 0.54 rad ≈ 30.96°
 ```
+
+example with `Vect` library
 
 ```javascript
-let a = [0, -1]
+let v = [3, 5]
 
-let angleRadians = angle(a) // =  π
-let angleDegrees = angleRadians * 180 / Math.PI // = 180°
+let alpha = Vect.angle(v) // ≈ 1.03 rad ≈ 59.04°
+let beta = Vect.verticalAngle(v) // ≈ 0.54 rad ≈ 30.96°
 ```
 
-```javascript
-let a = [-1, 0]
-
-let angleRadians = angle(a) // =  3 / 2 * π
-let angleDegrees = angleRadians * 180 / Math.PI // = 270°
-```
-
+|  x |  y |  α - radians  | α - degrees |
+|----|----|-----------|----------|
+|  0 |  0 |     0     |     0°   |
+|  1 |  0 |     0     |     0°   |
+|  0 |  1 |   π / 2   |    90°   |
+| -1 |  0 |     π     |   180°   |
+|  0 | -1 |  - π / 2  |   -90°   |
 
 ### Length
 
+Also called *magnitude*.
+
+Calculation is based on Pythagorean theorem (https://en.wikipedia.org/wiki/Pythagorean_theorem).
+
+```javascript
+length = Math.sqrt(x * x + y * y)
+```
+
+example
+
+```javascript
+let x = 3
+let y = 5
+
+let length = Math.sqrt(x * x + y * y)
+// ≈ 5.83
+```
+
+example with `Vect` library
+
+```javascript
+let v = [3,5]
+
+let length = Vect.length(v)
+// ≈ 5.83
+```
+
 ### Distance
+
+Distance between two points is nothing more than length of a vector from one point to another point.
+
+```javascript
+x = x2 - x1
+y = y2 - y1
+
+distance = Math.sqrt(x * x + y * y)
+```
+
+example
+
+```javascript
+let x1 = 3
+let y1 = 5
+
+let x2 = 7
+let y2 = 8
+
+let x = x2 - x1 // = 4
+let y = y2 - y2 // = 3
+
+let distance = Math.sqrt(x * x + y * y)
+// = 5
+```
+
+example with `Vect` library
+```javascript
+let v1 = [3, 5]
+let v2 = [7, 8]
+
+let distance = Vect.distance(v1, v2)
+// = 5
+```
 
 ### Squared length
 
@@ -223,21 +281,131 @@ let angleDegrees = angleRadians * 180 / Math.PI // = 270°
 
 ## Vector functions
 
-### Add
+### Add vector
 
-### Subtract
+Add components separately.
+
+```javascript
+x = x1 + x2
+y = y1 + y2
+```
+
+example
+
+```javascript
+let x1 = 3
+let y1 = 5
+
+let x2 = 2
+let y2 = 4
+
+let x = x1 + x2 // = 5
+let y = y1 + y2 // = 9
+```
+
+example with `Vect` library
+
+```javascript
+let v1 = [3, 5]
+let v2 = [2, 4]
+
+let v = Vect.add(v1, v2) // = [5, 9]
+```
+
+### Subtract vector
+
+Subtract components separately.
+
+```javascript
+x = x1 - x2
+y = y1 - y2
+```
+
+example
+
+```javascript
+let x1 = 3
+let y1 = 5
+
+let x2 = 2
+let y2 = 4
+
+let x = x1 - x2 // = 1
+let y = y1 - y2 // = 1
+```
+
+example with `Vect` library
+
+```javascript
+let v1 = [3, 5]
+let v2 = [2, 4]
+
+let v = Vect.subtract(v1, v2) // = [1, 1]
+```
 
 ### Multiply
 
+To multiply vectors you have to multiply its components separately.
+
+```javascript
+x = x1 * x2
+y = y1 * y2
+```
+
+example
+
+```javascript
+let x1 = 3
+let y1 = 5
+
+let x2 = 3
+let y2 = 2
+
+let x = x1 * x2 // = 3 * 3 = 9
+let y = y1 * y2 // = 5 * 2 = 10
+```
+
+example with `Vect` library
+
+```javascript
+let v1 = [3, 5]
+let v2 = [3, 2]
+
+let v = Vect.multiply(v1, v2) // = [9, 10]
+```
+
 ### Divide
 
-### Scale
+To divide vectors you have to divide its components separately.
+
+Remember to not divide by 0.
+
+```javascript
+x = x1 / x2
+y = y1 / y2
+```
 
 ### Rotate
 
 ### Invert
 
+```javascript
+x = x1 * -1
+y = y1 * -1
+```
+
 ### Normalize
+
+Normalizing is dividing components by vector's length.
+
+Which means that components can range from -1 to 1.
+
+```javascript
+x = x1 / length
+y = y1 / length
+```
+
+It is used to get the direction.
 
 ### Project
 
