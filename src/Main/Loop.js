@@ -9,7 +9,7 @@ class Loop {
   constructor (state) {
     this.raf = null
     this.setState(state)
-    this.start()
+    // this.start()
   }
 
   setState (state) {
