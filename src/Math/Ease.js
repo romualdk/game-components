@@ -1,5 +1,5 @@
 /**
- * Easing functions
+ * Easing functions in less than 1 kB
  *
  * http://gizma.com/easing/
  */
