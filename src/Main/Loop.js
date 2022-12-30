@@ -1,15 +1,13 @@
 /* global performance, requestAnimationFrame, cancelAnimationFrame */
 
-const ONE_SECOND = 1000 // ms
 const FPS = 60 // frames per second
-const DELTA = ONE_SECOND / FPS
+const DELTA = 1000 / FPS
 const STEP = 1 / FPS
 
 class Loop {
   constructor (state) {
     this.raf = null
     this.setState(state)
-    // this.start()
   }
 
   setState (state) {
@@ -36,7 +34,7 @@ class Loop {
     this.elapsed = this.now - this.last
     this.last = this.now
 
-    if (this.elapsed > ONE_SECOND) {
+    if (this.elapsed > 1000) {
       return
     }
 
